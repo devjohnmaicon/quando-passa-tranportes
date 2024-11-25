@@ -62,9 +62,9 @@ function CardLineComponent({linha, rota}: PropCard) {
 
 function CardComponent({linha, rota, background}: PropCard) {
     const navigate = useNavigate();
-    const redirectForLinha = (linha) => {
-        navigate(`/linha/${linha}`);
-        console.log(`/linha${linha}`)
+    const redirectForLinha = (line: string) => {
+        navigate(`/linha/${line}`);
+        console.log(`/linha${line}`)
     }
     return (
         <div className={`h-100 border p-2 rounded ${background} cursor-active`} onClick={() => redirectForLinha(linha)}>
@@ -75,6 +75,7 @@ function CardComponent({linha, rota, background}: PropCard) {
 }
 
 function PageHome() {
+    // @ts-ignore
     return (
         <section className='py-2'>
             <div className="py-2 px-4">
