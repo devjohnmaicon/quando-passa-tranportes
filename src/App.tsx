@@ -10,8 +10,6 @@ function App() {
         <>
             <Router>
                 <HeaderComponent/>
-                {/*<PageLinha/>*/}
-
                 <Routes>
                     <Route path="/" element={<PageHome/>}/>
                     <Route path="/linha/:id" element={<PageLinha/>}/>
