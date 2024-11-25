@@ -1,0 +1,17 @@
+.custom-row {
+
+    row-gap: 15px; /* Ajuste o valor conforme necessário */
+  }
+
+.bg-green{
+    background-color: #c4e6cc;
+}
+
+
+.cursor-active{
+    cursor: pointer;
+}
+
+.custom-tab{
+color: red;
+}
